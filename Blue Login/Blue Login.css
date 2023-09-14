@@ -1,0 +1,550 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.content {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.circle {
+  width: 50%;
+  height: 100vh;
+  background-color: #026efb;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  border-bottom-right-radius: 100%;
+}
+
+@-webkit-keyframes identifier {
+  0% {
+    left: 0%;
+    top: 0%;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 0%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    left: 50%;
+    top: 0%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 0%;
+  }
+}
+
+@keyframes identifier {
+  0% {
+    left: 0%;
+    top: 0%;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 0%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    left: 50%;
+    top: 0%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 0%;
+  }
+}
+@-webkit-keyframes identifier2 {
+  0% {
+    left: 50%;
+    top: 0%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 0%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    left: 0%;
+    top: 0%;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 100;
+  }
+}
+@keyframes identifier2 {
+  0% {
+    left: 50%;
+    top: 0%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 0%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    left: 0%;
+    top: 0%;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 100;
+  }
+}
+.signin {
+  position: absolute;
+  margin: 3% 6%;
+  width: 90%;
+  height: 90%;
+  padding: 4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  visibility: visible;
+  z-index: 5;
+  -webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s;
+}
+.signin .logo {
+  width: 40%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.signin .logo .text {
+  color: #fff;
+}
+.signin .logo .text h1 {
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 2%;
+}
+.signin .logo .text p {
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 5%;
+}
+.signin .logo .text button {
+  width: 40%;
+  height: 30%;
+  background-color: transparent;
+  color: #fff;
+  text-transform: capitalize;
+  border: 1px #fff solid;
+  border-radius: 20px;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  cursor: pointer;
+}
+.signin .login {
+  width: 40%;
+  height: 80%;
+}
+.signin .login h1 {
+  text-align: center;
+  margin-bottom: 5%;
+}
+.signin .login h1::first-letter {
+  text-transform: capitalize;
+}
+.signin .login form {
+  width: 100%;
+  height: 65%;
+  margin-bottom: 3%;
+}
+.signin .login form > div {
+  width: 100%;
+  height: 25%;
+  margin-bottom: 10%;
+  position: relative;
+}
+.signin .login form > div > img {
+  position: absolute;
+  width: 5.5%;
+  left: 0%;
+  top: 50%;
+  -webkit-transform: translate(40%, -60%);
+          transform: translate(40%, -60%);
+  opacity: 0.7;
+}
+.signin .login form > div > input {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: rgba(128, 128, 128, 0.3568627451);
+  border: none;
+  padding-left: 10%;
+}
+.signin .login form > div > input::-webkit-input-placeholder {
+  text-transform: capitalize;
+  color: black;
+  opacity: 0.5;
+  font-weight: bold;
+}
+.signin .login form > div > input::-moz-placeholder {
+  text-transform: capitalize;
+  color: black;
+  opacity: 0.5;
+  font-weight: bold;
+}
+.signin .login form > div > input:-ms-input-placeholder {
+  text-transform: capitalize;
+  color: black;
+  opacity: 0.5;
+  font-weight: bold;
+}
+.signin .login form > div > input::-ms-input-placeholder {
+  text-transform: capitalize;
+  color: black;
+  opacity: 0.5;
+  font-weight: bold;
+}
+.signin .login form > div > input::placeholder {
+  text-transform: capitalize;
+  color: black;
+  opacity: 0.5;
+  font-weight: bold;
+}
+.signin .login form > input {
+  width: 30%;
+  height: 15%;
+  border-radius: 30px;
+  border: none;
+  background-color: #026efb;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+.signin .login p {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 13px;
+  letter-spacing: 0.1px;
+}
+.signin .login .icons {
+  margin-left: 10%;
+  width: 80%;
+  height: 12%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.signin .login .icons a {
+  margin-right: 4%;
+}
+.signin .login .icons a > img {
+  width: 35px;
+  border-radius: 50%;
+}
+
+.signup {
+  position: absolute;
+  margin: 3% 6%;
+  width: 90%;
+  height: 90%;
+  padding: 4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  visibility: hidden;
+  -webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s;
+  z-index: 10;
+}
+.signup .logo {
+  width: 40%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.signup .logo .text {
+  color: #fff;
+}
+.signup .logo .text h1 {
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 2%;
+}
+.signup .logo .text p {
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 5%;
+}
+.signup .logo .text button {
+  width: 40%;
+  height: 30%;
+  background-color: transparent;
+  color: #fff;
+  text-transform: capitalize;
+  border: 1px #fff solid;
+  border-radius: 20px;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  cursor: pointer;
+}
+.signup .login {
+  width: 40%;
+  height: 100%;
+}
+.signup .login h1 {
+  text-align: center;
+  margin-bottom: 4%;
+}
+.signup .login h1::first-letter {
+  text-transform: capitalize;
+}
+.signup .login form {
+  width: 100%;
+  height: 75%;
+  margin-bottom: 1%;
+}
+.signup .login form > div {
+  width: 100%;
+  height: 18%;
+  margin-bottom: 7%;
+  position: relative;
+}
+.signup .login form > div > img {
+  position: absolute;
+  width: 6%;
+  left: 0%;
+  top: 50%;
+  -webkit-transform: translate(20%, -60%);
+          transform: translate(20%, -60%);
+  opacity: 0.7;
+}
+.signup .login form > div > input {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: rgba(128, 128, 128, 0.3568627451);
+  border: none;
+  padding-left: 10%;
+}
+.signup .login form > div > input::-webkit-input-placeholder {
+  text-transform: capitalize;
+  color: black;
+  opacity: 0.5;
+  font-weight: bold;
+}
+.signup .login form > div > input::-moz-placeholder {
+  text-transform: capitalize;
+  color: black;
+  opacity: 0.5;
+  font-weight: bold;
+}
+.signup .login form > div > input:-ms-input-placeholder {
+  text-transform: capitalize;
+  color: black;
+  opacity: 0.5;
+  font-weight: bold;
+}
+.signup .login form > div > input::-ms-input-placeholder {
+  text-transform: capitalize;
+  color: black;
+  opacity: 0.5;
+  font-weight: bold;
+}
+.signup .login form > div > input::placeholder {
+  text-transform: capitalize;
+  color: black;
+  opacity: 0.5;
+  font-weight: bold;
+}
+.signup .login form > input {
+  width: 30%;
+  height: 10%;
+  border-radius: 30px;
+  border: none;
+  background-color: #026efb;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+.signup .login p {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 13px;
+  letter-spacing: 0.1px;
+}
+.signup .login .icons {
+  margin-left: 10%;
+  width: 80%;
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.signup .login .icons a {
+  margin-right: 4%;
+}
+.signup .login .icons a > img {
+  width: 35px;
+  border-radius: 50%;
+}
+
+@media (max-width: 767px) {
+  .circle {
+    display: none;
+  }
+  .signin {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .signin .logo {
+    width: 80%;
+    background-color: #026efb;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 25%;
+  }
+  .signin .logo img {
+    display: none;
+  }
+  .signin .login {
+    width: 80%;
+  }
+  .signup {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .signup .logo {
+    width: 80%;
+    background-color: #026efb;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 25%;
+  }
+  .signup .logo img {
+    display: none;
+  }
+  .signup .login {
+    width: 80%;
+  }
+}
